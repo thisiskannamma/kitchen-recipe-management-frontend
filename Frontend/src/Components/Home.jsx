@@ -7,7 +7,7 @@ import "../App.css"
 function Home() {
   const [recipes, setRecipes] = useState([])
   useEffect(() => {
-    axios.get("http://localhost:3000/recipe/recipes")
+    axios.get("https://recipe-1.onrender.com/recipe/recipes")
       .then(recipes => {
         setRecipes(recipes.data)
       }).catch(err => console.log(err))

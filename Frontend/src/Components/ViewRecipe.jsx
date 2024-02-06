@@ -12,7 +12,7 @@ function ViewRecipe() {
     const { id } = useParams()
     const [recipe, setRecipe] = useState([])
     useEffect(() => {
-        axios.get('http://localhost:3000/recipe/' + id)
+        axios.get('https://recipe-1.onrender.com/recipe/' + id)
             .then(result => {
                 setRecipe(result.data)
             }).catch(err => console.log(err));
@@ -73,23 +73,7 @@ function ViewRecipe() {
 
 
         </>
-        // <div>
 
-        //     <div className="d-flex justify-content-center m-1 container mt-3">
-        //     <div className='p-2'>
-        //         <img style={{height:'50%'}} src={recipe.imageURL} alt="veg pulao" />
-        //     </div>
-        //     <div className="p-1">
-        //     <h1>{recipe.name}</h1>
-        //     <button className='btn btn-warning'>save</button>
-        //     <h4>Ingredients:</h4>
-        //     <p>{recipe.ingredients}</p>
-        //     <h3>Description:</h3>
-        //     <p>{recipe.description}</p>
-        //     </div>
-        //      </div>
-
-        // </div>
     )
 }
 

@@ -32,7 +32,7 @@ function Registration() {
         }}
         validationSchema={RegistrationSchema}
         onSubmit={(values,{setSubmitting,resetForm})=>{
-            fetch("http://localhost:3000/auth/register",{
+            fetch("https://recipe-1.onrender.com/auth/register",{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'

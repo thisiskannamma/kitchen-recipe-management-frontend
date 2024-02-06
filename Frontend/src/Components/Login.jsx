@@ -30,7 +30,7 @@ function  Login() {
         }}
         validationSchema={LoginSchema}
         onSubmit={(values,{setSubmitting})=>{
-            fetch("http://localhost:3000/auth/login",{
+            fetch("https://recipe-1.onrender.com/auth/login",{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'

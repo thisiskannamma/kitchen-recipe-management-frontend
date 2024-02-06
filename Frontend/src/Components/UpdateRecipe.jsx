@@ -21,7 +21,7 @@ function UpdateRecipe() {
     })
 
     useEffect(() => {
-        axios.get('http://localhost:3000/recipe/' + id)
+        axios.get('https://recipe-1.onrender.com/recipe/' + id)
             .then(result => {
                 setRecipe(result.data)
             }).catch(err => console.log(err));

@@ -24,7 +24,7 @@ function CreateRecipe() {
 
     const handleSubmit=(e)=>{
         e.preventDefault()
-        axios.post("http://localhost:3000/recipe/create",recipe)
+        axios.post("https://recipe-1.onrender.com/recipe/create",recipe)
         .then(result=>{
             navigateTo('/home')
             console.log(result.data);

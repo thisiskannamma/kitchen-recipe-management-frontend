@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function BakedRecipe() {
   const [recipes, setRecipes] = useState([])
   useEffect(() => {
-    axios.get("http://localhost:3000/category/baked")
+    axios.get("https://recipe-1.onrender.com/category/baked")
       .then(recipes => {
         setRecipes(recipes.data)
       }).catch(err => console.log(err))
